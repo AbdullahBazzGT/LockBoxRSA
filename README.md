@@ -25,25 +25,17 @@ Key pairs will be generated securely for encryption and decryption.
 Installation
 Clone the repository to your local machine:
 
-bash
-Copy code
 git clone https://github.com/username/RSA-Encryption-Decryption-Calculator.git
 Open the project directory and install dependencies:
 
-bash
-Copy code
 cd RSA-Encryption-Decryption-Calculator
 npm install
 Run the development server:
 
-sql
-Copy code
 npm start
 Access the application in your web browser at http://localhost:3000.
 
 Contributing
 Contributions are welcome! If you have any suggestions, bug reports, or feature requests, please open an issue or submit a pull request.
 
-License
-This project is licensed under the MIT License.
 
