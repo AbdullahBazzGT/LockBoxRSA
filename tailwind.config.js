@@ -1,31 +1,20 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     textColor: {
-      'primary': '#3490dc',
-      'secondary': '#ffed4a',
-      'bg': '#b0b0b6',
-      'danger': '#e3342f',
+      Gray100: "#F3F4F6",
+      Gray600: "#4B5563",
     },
     backgroundColor: {
-      'primary': '#3490dc',
-      'secondary': '#ffed4a',
-      'bg': '#b0b0b6',
-      'bgOrange': '#e08c24',
-      'danger': '#e3342f',
+      Gray400: "#9CA3AF",
+      Gray500: "#6B7280",
     },
     gradientColorStops: {
-      'primary': '#3490dc',
-      'secondary': '#ffed4a',
-      'bg': '#b0b0b6',
-      'bgOrange': '#e08c24',
-      'danger': '#e3342f',
+      Blue600: "#3B82F6",
+      Black: "#000000",
     },
     extend: {},
   },
   plugins: [],
-}
+};
