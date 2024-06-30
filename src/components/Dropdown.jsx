@@ -1,27 +1,24 @@
-import React, { useState } from "react";
+import React, { Fragment, useState } from "react";
 
-function Dropdown({ title, children }) {
-  const [isOpen, setIsOpen] = useState(false);
+function Dropdown({ children }) {
+  const [open, setOpen] = useState(false);
 
-  const toggleDropdown = () => {
-    setIsOpen(!isOpen);
-  };
+  function handleClick() {
+    setOpen(!open);
+  }
 
   return (
-    <div className="max-w-4xl w-full bg-white text-blue-600 rounded-lg shadow-lg p-6 m-10 text-black">
-      <button
-        onClick={toggleDropdown}
-        className="w-full text-left bg-blue-600 text-black font-semibold py-2 px-4 rounded-lg shadow-lg hover:bg-blue-700 transition duration-300"
-      >
-        {isOpen ? `Hide ${title}` : `Show ${title}`}
-      </button>
-      {isOpen && (
-        <div className="mt-4">
-          <h2 className="text-2xl font-semibold mb-4">{title}</h2>
-          {children}
-        </div>
-      )}
-    </div>
+    <>
+      <div className="pl-6 pt-6 pb-3">
+        <button
+          className="border-1 rounded-lg border-gray-400 px-10 py-2 text-2xl hover:opacity-60"
+          onClick={handleClick}
+        >
+          {open ? "Hide Example" : "Show Example"}
+        </button>
+        {open && <div className="mt-3">{children}</div>}
+      </div>
+    </>
   );
 }
 
