@@ -38,7 +38,7 @@ function App() {
           <h4 className="text-center mt-4 pb-2"> The RSA Process:</h4>
           <img
             alt="RSA Process Image"
-            className="border-1 border-gray-300 ml-[20vh]"
+            className="border-1 border-gray-300 m-auto"
             src="src/images/RSAProcess.png"
           ></img>
         </p>
@@ -63,7 +63,7 @@ function App() {
       </div>
       <div className="footer bg-[#003057] h-[20vh] mt-28 flex items-center justify-center">
         <p className="text-[#dfcb83] text-xl mb-0">
-          @ Copyright{" "}
+          © Copyright{" "}
           <a
             href="https://github.com/AbdullahBazzGT"
             target="_blank"

@@ -4,7 +4,7 @@ function EncryptProcess() {
   return (
     <>
       <h3 className="pl-6 pt-6 pb-3 text-5xl">How do we encrypt?</h3>
-      <ol className="list-decimal list-inside text-left space-y-2 text-2xl">
+      <ol className="list-decimal list-inside text-left space-y-2 text-2xl pr-6 text-pretty">
         <li>
           Select any two large prime numbers, <em>p</em> and <em>q</em>.
         </li>
