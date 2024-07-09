@@ -9,7 +9,7 @@ import Decryptor from "./components/Decryptor";
 function App() {
   return (
     <>
-      <div className="Georgia Tech Header bg-[#003057] text-white shadow-lg">
+      <div className="Georgia Tech Header bg-[#003057] text-white shadow-lg w-full">
         {" "}
         <p className="pl-6 py-4 text-balance text-7xl">
           RSA cryptology as{" "}
@@ -21,7 +21,9 @@ function App() {
       </div>{" "}
       {/* END OF GT HEADER */}
       <div className="bg-white text-black py-6 mx-6 rounded-lg shadow-lg">
-        <h3 className="pl-6 pt-10 pb-3 text-5xl">What is RSA cryptology?</h3>
+        <h3 className="px-6 pt-10 pb-3 text-5xl text-center">
+          What is RSA cryptology?
+        </h3>
         <p className="px-6 text-2xl">
           {" "}
           RSA Encryption is a simple encryption technique that utilizes the
@@ -43,25 +45,25 @@ function App() {
           ></img>
         </p>
       </div>
-      <div className="flex">
-        <div className="bg-white text-black py-6 mx-3 rounded-lg shadow-lg my-6 w-1/2">
+      <div className=" ServiceBox flex flex-col sm:flex-row">
+        <div className="bg-white text-black py-6 my-3 mx-6 rounded-lg shadow-lg w-full max-w-[59vh] md:max-w-full md:w-1/2">
           <EncryptProcess />
           <Dropdown children={<EncryptText />} />
         </div>
-        <div className="w-1/2">
+        <div className="w-full sm:w-1/2">
           <Encryptor />
         </div>
       </div>
-      <div className="flex">
-        <div className="w-1/2">
+      <div className="ServiceBox flex flex-col-reverse sm:flex-row">
+        <div className="w-full sm:w-1/2">
           <Decryptor />
         </div>
-        <div className="bg-white text-black py-6 mx-3 rounded-lg shadow-lg my-6 w-1/2">
+        <div className="bg-white text-black py-6 my-3 mx-6 rounded-lg shadow-lg w-full max-w-[59vh] md:max-w-full md:w-1/2">
           <DecryptProcess />
           <Dropdown children={<DecryptText />} />
         </div>
       </div>
-      <div className="footer bg-[#003057] h-[20vh] mt-28 flex items-center justify-center">
+      <div className="footer bg-[#003057] h-[20vh] mt-16 flex items-center justify-center">
         <p className="text-[#dfcb83] text-xl mb-0">
           © Copyright{" "}
           <a

@@ -123,16 +123,19 @@ function Decryptor() {
           <label> Ciphertext (C):</label>
           <input
             className="mb-10 mt-3 text-black px-3"
+            placeholder="Encrypted Message as Integer"
             onChange={handleCiphertextChange}
           />
           <label> Public Key (N):</label>
           <input
             className="mb-10 mt-3 text-black px-3"
+            placeholder="Prime 1 * Prime 2"
             onChange={handlePublicKeyChange}
           />
           <label> Public Exponent (e):</label>
           <input
             className="mb-10 mt-3 text-black px-3"
+            placeholder="Given Public Exponent"
             onChange={handlePublicExponentChange}
           />
         </form>

@@ -3,8 +3,10 @@ import React, { Fragment } from "react";
 function DecryptProcess() {
   return (
     <>
-      <h2 className="pl-6 pt-10 pb-3 text-5xl">How do we decrypt?</h2>
-      <ol className="list-decimal list-inside text-left space-y-2 text-2xl pr-6 text-pretty">
+      <h2 className="pl-6 pt-6 pb-3 text-2xl sm:text-3xl md:text-5xl">
+        How do we decrypt?
+      </h2>
+      <ol className="list-decimal list-inside text-left space-y-2 pr-6 text-pretty text-lg sm:text-xl md:text-2xl">
         <li>
           Retrieve the ciphertext <strong>C</strong> that was previously
           encrypted using the public key.

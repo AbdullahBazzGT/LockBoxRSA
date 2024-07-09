@@ -3,8 +3,10 @@ import React, { Fragment } from "react";
 function EncryptProcess() {
   return (
     <>
-      <h3 className="pl-6 pt-6 pb-3 text-5xl">How do we encrypt?</h3>
-      <ol className="list-decimal list-inside text-left space-y-2 text-2xl pr-6 text-pretty">
+      <h3 className="pl-6 pt-6 pb-3 text-2xl sm:text-3xl md:text-5xl">
+        How do we encrypt?
+      </h3>
+      <ol className="list-decimal list-inside text-left space-y-2 pr-6 text-pretty text-lg sm:text-xl md:text-2xl">
         <li>
           Select any two large prime numbers, <em>p</em> and <em>q</em>.
         </li>

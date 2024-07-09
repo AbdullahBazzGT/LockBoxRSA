@@ -96,22 +96,25 @@ function Encryptor() {
           <label> Message (M):</label>
           <input
             className="mb-10 mt-3 text-black px-3"
-            placeholder="Text or Integer"
+            placeholder="Message as an Integer"
             onChange={handleMessageChange}
           />
           <label> Prime 1 (p):</label>
           <input
             className="mb-10 mt-3 text-black px-3"
+            placeholder="Unique Prime1"
             onChange={handlePrime1Change}
           />
           <label> Prime 2 (q):</label>
           <input
             className="mb-10 mt-3 text-black px-3"
+            placeholder="Unique Prime2"
             onChange={handlePrime2Change}
           />
           <label> Public Exponent (e):</label>
           <input
             className="mb-10 mt-3 text-black px-3"
+            placeholder="Integer Coprime with Totient"
             onChange={handlePublicExponentChange}
           />
         </form>
