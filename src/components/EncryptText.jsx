@@ -3,8 +3,41 @@ function EncryptText() {
     <>
       <div>
         <ul className="pl-1 text-2xl">
-          <li> - Ax</li>
-          <li> - Ax</li>
+          <li>
+            {" "}
+            Message to Encrypt (m):{" "}
+            <span className="font-mono">
+              <strong>08</strong>
+            </span>
+          </li>
+          <li>
+            {" "}
+            Prime One (p):{" "}
+            <span className="font-mono">
+              <strong>05</strong>
+            </span>
+          </li>
+          <li>
+            {" "}
+            Prime Two:{" "}
+            <span className="font-mono">
+              <strong>11</strong>
+            </span>
+          </li>
+          <li>
+            {" "}
+            Public Exponent:{" "}
+            <span className="font-mono">
+              <strong>03</strong>
+            </span>
+          </li>
+          <br />
+          <li>
+            Decrypted Message:{" "}
+            <span className="font-mono">
+              <strong>17</strong>
+            </span>
+          </li>
         </ul>
       </div>
     </>

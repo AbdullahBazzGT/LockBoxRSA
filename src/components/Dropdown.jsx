@@ -11,7 +11,7 @@ function Dropdown({ children }) {
     <>
       <div className="pl-6 pt-6 pb-3">
         <button
-          className="border-1 rounded-lg border-gray-400 px-10 py-2 text-2xl hover:opacity-60"
+          className="border-1 rounded-lg border-gray-400 px-10 py-2 text-xl sm:text-2xl hover:opacity-60"
           onClick={handleClick}
         >
           {open ? "Hide Example" : "Show Example"}
