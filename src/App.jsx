@@ -5,6 +5,7 @@ import EncryptText from "./components/EncryptText";
 import DecryptText from "./components/DecryptText";
 import Encryptor from "./components/Encryptor";
 import Decryptor from "./components/Decryptor";
+import rsaProcessImage from "./images/RSAProcess.png";
 
 function App() {
   return (
@@ -39,9 +40,9 @@ function App() {
           <br />
           <h4 className="text-center mt-4 pb-2"> The RSA Process:</h4>
           <img
-            alt="RSA Process Image"
+            alt="RSA Process Image Abdullah Bazz"
             className="border-1 border-gray-300 m-auto"
-            src="src/images/RSAProcess.png"
+            src={rsaProcessImage}
           ></img>
         </p>
       </div>

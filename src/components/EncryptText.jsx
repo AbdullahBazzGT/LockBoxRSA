@@ -5,14 +5,14 @@ function EncryptText() {
         <ul className="pl-1 text-2xl">
           <li>
             {" "}
-            Message to Encrypt (m):{" "}
+            Message to Encrypt:{" "}
             <span className="font-mono">
               <strong>08</strong>
             </span>
           </li>
           <li>
             {" "}
-            Prime One (p):{" "}
+            Prime One:{" "}
             <span className="font-mono">
               <strong>05</strong>
             </span>
