@@ -39,11 +39,24 @@ function App() {
           <br />
           <br />
           <h4 className="text-center mt-4 pb-2"> The RSA Process:</h4>
-          <img
-            alt="RSA Process Image Abdullah Bazz"
-            className="border-1 border-gray-300 m-auto"
-            src={rsaProcessImage}
-          ></img>
+          <p className="text-center">
+            Plaintext --{">"} Public Key --{">"} Ciphertext --{">"} Private Key
+            -{">"} Plaintext
+          </p>
+        </p>
+      </div>
+      <div className="rounded-lg shadow-lg m-6 bg-[#ff8383]">
+        <h4 className="text-center p-4">
+          {" "}
+          <strong>Possible RSA Restriction - Block Size</strong>
+        </h4>
+        <p className="px-6 pb-10 text-2xl">
+          Block size refers to the size of the data block that can be encrypted
+          using the RSA algorithm. RSA operates on blocks of data that are
+          <strong> smaller </strong> than the key size. For instance, if you
+          have a 2048-bit RSA key, the maximum size of data you can encrypt in
+          one block is slightly less than 2048 bits. Basically the message can
+          never be bigger than the public key!
         </p>
       </div>
       <div className=" ServiceBox flex flex-col sm:flex-row">
@@ -64,7 +77,7 @@ function App() {
           <Dropdown children={<DecryptText />} />
         </div>
       </div>
-      <div className="footer bg-[#003057] h-[20vh] mt-16 flex items-center justify-center">
+      <div className="footer bg-[#003057] h-[20vh] w-full mr-0 pr-0 mt-16 flex items-center justify-center">
         <p className="text-[#dfcb83] text-xl mb-0">
           © Copyright{" "}
           <a
