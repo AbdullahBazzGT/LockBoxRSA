@@ -6,6 +6,11 @@ import DecryptText from "./components/DecryptText";
 import Encryptor from "./components/Encryptor";
 import Decryptor from "./components/Decryptor";
 import rsaProcessImage from "./images/RSAProcess.png";
+import ReactGA from "react-ga4";
+
+ReactGA.initialize("G-31NXFEC27G"); // Replace with your GA4 Measurement ID
+
+ReactGA.send("pageview"); // To track the initial pageview
 
 function App() {
   return (
@@ -41,7 +46,7 @@ function App() {
           <h4 className="text-center mt-4 pb-2"> The RSA Process:</h4>
           <p className="text-center">
             Plaintext --{">"} Public Key --{">"} Ciphertext --{">"} Private Key
-            -{">"} Plaintext
+            --{">"} Plaintext
           </p>
         </p>
       </div>
