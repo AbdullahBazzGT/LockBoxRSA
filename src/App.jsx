@@ -8,9 +8,8 @@ import Decryptor from "./components/Decryptor";
 import rsaProcessImage from "./images/RSAProcess.png";
 import ReactGA from "react-ga4";
 
-ReactGA.initialize("G-31NXFEC27G"); // Replace with your GA4 Measurement ID
-
-ReactGA.send("pageview"); // To track the initial pageview
+ReactGA.initialize("G-31NXFEC27G");
+ReactGA.send("pageview");
 
 function App() {
   return (
@@ -86,9 +85,9 @@ function App() {
         <p className="text-[#dfcb83] text-xl mb-0">
           © Copyright{" "}
           <a
-            href="https://github.com/AbdullahBazzGT"
+            href="https://www.linkedin.com/in/abdullah-bazz-397161239/"
             target="_blank"
-            title="My github!"
+            title="My LinkedIn! Abdullah Bazz"
             className="text-[#dfcb83] hover:opacity-70"
           >
             Abdullah Bazz
